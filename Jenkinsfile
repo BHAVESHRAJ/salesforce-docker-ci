@@ -1,17 +1,14 @@
 pipeline {
-    agent {
-        docker {
-            image 'curlybracket/salesforce:latest'
-            args '--user=root'
+    agent { docker { 
+      args '--user=root'
+      image 'curlybracket/salesforce:latest'
+      } 
+    }
     stages {
-
-        stage("Build") {
-            steps {
-                echo "building..."
-            }
-        }
+      stage ('Jenkins Start Notification') {
+        steps {
+          echo 'sending notification'
+      }
     }
-        }
-    }
+    }    
 }
-
