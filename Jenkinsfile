@@ -5,19 +5,20 @@ pipeline {
             args '--user=root'
         }
     }
-    stage("Build") {
-      steps {
-        echo "building..."
+    stages {
+      stage("Build") {
+        steps {
+            echo "building..."
       }
     }
-    stage("Test") {
-      steps {
-        echo "testing..."
+      stage("Test") {
+        steps {
+            echo "testing..."
       }
     }
-    stage("Package") {
-      steps {
-        echo "packaging..."
+      stage("Package") {
+        steps {
+            echo "packaging..."
       }
     }
    
