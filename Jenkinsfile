@@ -1,6 +1,7 @@
 pipeline {
     agent {
         docker {
+        args '--user=root'
             image 'curlybracket/salesforce:latest'
         }
     }
