@@ -1,7 +1,7 @@
 pipeline {
     agent { docker { 
       args '--user=root'
-      image 'curlybracket/salesforce:latest'
+      image 'salesforce/salesforcedx:latest-full'
       } 
     }
     stages {
