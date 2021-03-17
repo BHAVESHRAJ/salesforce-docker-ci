@@ -10,5 +10,4 @@ pipeline {
         CI_ENVIRONMENT_URL = 'https://test.salesforce.com'
     }
    
-    }
 }
