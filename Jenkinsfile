@@ -5,9 +5,20 @@ pipeline {
             args '--user=root'
         }
     }
-    environment {
-        CI_ENVIRONMENT = credentials('CI_ENVIRONMENT')
-        CI_ENVIRONMENT_URL = 'https://test.salesforce.com'
+    stage("Build") {
+      steps {
+        echo "building..."
+      }
+    }
+    stage("Test") {
+      steps {
+        echo "testing..."
+      }
+    }
+    stage("Package") {
+      steps {
+        echo "packaging..."
+      }
     }
    
 }
